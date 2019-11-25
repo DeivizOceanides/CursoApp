@@ -1,0 +1,17 @@
+<p>Componente 4</p>
+
+<p>Esto es un número {{vnumero}}</p>
+<p>Esto es una cadena {{vcadena}}</p>
+<p>Esto es una tupla {{vtupla}}</p>
+<p>Esto no es un coche: {{vCcoche.marca}} le falta un ruedin {{vCcoche.ruedas}}</p>
+
+
+<p>{{vnumero}}</p>
+<p><input value="{{vnumero}}" (change)="cambiarnumero($event.target.value)"></p>
+<p><input value="{{vcadena}}" (change)="cambiarcadena($event.target.value)"></p>
+
+
+Directiva ngmodel
+<input [(ngModel)]="vcadena">
+
+
