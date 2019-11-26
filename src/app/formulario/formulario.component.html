@@ -1,0 +1,14 @@
+<p>formulario works!</p>
+<div>
+  <article *ngFor="let usuario of usuarios">
+    <span>
+      {{usuario.nombre}} {{usuario.apellido}}
+    </span>
+  </article>
+</div>
+
+<div>
+  <p><span>Nombre: </span><input type="text" [(ngModel)]="usuario.nombre"></p>
+  <p><span>Apellido: </span><input type="text" [(ngModel)]="usuario.apellido"></p>
+  <p><button (click)="this.nuevo()">Guardar</button> </p>
+</div>

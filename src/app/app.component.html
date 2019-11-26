@@ -1,10 +1,23 @@
-<a routerLink="C1">Componente C1</a>
-<br><br>
-<a routerLink="C2">Componente C2</a>
-<br><br>
-<a routerLink="C3">Componente C3</a>
-<br><br>
-<a routerLink="C4">Componente C4</a>
-<br><br>
+<mat-sidenav-container fullscreen>
+  <mat-sidenav mode="side" #sidenav position="start">
+    EJERCICIOS
+    <hr>
+    <ul>
+      <li><a routerLink='' (click)="sidenav.close()">Inicio</a></li>
+      <li><a routerLink='C3' (click)="sidenav.close()">c3</a></li>
+      <li><a routerLink='formulario' (click)="sidenav.close()">Formulario</a></li>
+    </ul>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      Curso multiplataforma
+    </mat-toolbar>
+    <div class="main-content">
+    <router-outlet></router-outlet>
+  </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 
-<router-outlet></router-outlet>
