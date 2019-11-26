@@ -1,1 +1,11 @@
-<p>Componente 2</p>
+<p *ngIf="varSwitch==2">Componente 2</p>
+
+<div [ngSwitch]="varSwitch">
+  <p *ngSwitchCase="1"> Se muestra 1</p>
+  <p *ngSwitchCase="2"> Se muestra 2</p>
+  <p *ngSwitchCase="8"> Se muestra 8</p>
+</div>
+
+<p *ngFor="let posicion of varFor">{{posicion}}</p>
+
+<p [ngStyle]="{color: 'red'}">Elemento de color rojo</p>
