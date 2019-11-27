@@ -14,11 +14,13 @@ export class ServicioService {
   }
 
   public getUsuarios(){
-        return this._usuarios;
+        //return this._usuarios;
+    // get<Usuario[]>(this.apiUrl + 'usuario')
+
   }
 
   public getUsuarios$(): Observable<Usuario[]> {
-    return this._usuario$.asObservable();
+    return this._usuarios$.asObservable();
   }
 
   nuevoUsuario(): Usuario {

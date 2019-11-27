@@ -16,7 +16,7 @@ public usuario: Usuario;
   constructor(private servicioService: ServicioService) { }
 
   ngOnInit() {
-    this.usuarios = this.servicioService.getUsuarios();
+ //   this.usuarios = this.servicioService.getUsuarios();
     this.usuarios$ = this.servicioService.getUsuarios$();
     this.usuariosSuscripcion = this.usuarios$.subscribe(usuarios => this.usuarios);
     this.usuario = this.servicioService.nuevoUsuario();

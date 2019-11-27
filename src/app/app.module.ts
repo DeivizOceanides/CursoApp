@@ -11,6 +11,8 @@ import {FormsModule} from '@angular/forms';
 import {MatIconModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormularioComponent } from './formulario/formulario.component';
+import {UsuarioApiComponent} from './usuario-api/usuario-api.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { FormularioComponent } from './formulario/formulario.component';
     C2Component,
     C3Component,
     C4Component,
-    FormularioComponent
+    FormularioComponent,
+    UsuarioApiComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { FormularioComponent } from './formulario/formulario.component';
     FormsModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
